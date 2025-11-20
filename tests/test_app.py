@@ -1,6 +1,7 @@
 import pytest
 from app import create_app
-
+import sys, pathlib
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 @pytest.fixture
 def client():
     app = create_app()
