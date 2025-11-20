@@ -1,3 +1,4 @@
+```markdown
 # Flask sample app
 
 This repository includes a minimal Flask application with pytest tests, a Dockerfile, and a CI workflow.
@@ -40,29 +41,4 @@ Build and run:
 docker build -t flask-sample .
 docker run -p 5000:5000 flask-sample
 ```
-
-## How to add these files to your repo and open a PR
-Copy these files into your local checkout, then:
-
-```bash
-# create a branch locally
-git checkout -b add/flask-sample
-
-# stage and commit
-git add .
-git commit -m "Add sample Flask app, tests, Dockerfile and CI workflow"
-
-# push to remote (this will create the branch on GitHub)
-git push -u origin add/flask-sample
 ```
-
-Then create a pull request in the GitHub UI.
-
-Note: I attempted to create the branch remotely on your behalf, but your repository currently has no commits (it's empty), so I couldn't create a branch there. Pushing the branch from your local copy will create the branch and the initial commit on GitHub.
-
-If you'd like, I can:
-- generate the exact git patch for these files that you can apply locally, or
-- create a single multi-file patch (diff) you can apply, or
-- after you push the branch, open a draft PR template for you.
-
-Tell me which of those you prefer and I’ll produce it next.
